@@ -1,7 +1,7 @@
 
 var timerID = $("p#timerID");
 var scoreVal = 0
-var seconds = 10; //this defines the starting time for the timer
+var seconds = 30; //this defines the starting time for the timer
 var second = 0; //if seconds = second, game ends;
 var pix = new Array("img/correct1.jpg", "img/incorrect.jpg", "img/correct2.jpg", "img/incorrect.jpg", "img/correct3.jpg", "img/incorrect.jpg", "img/incorrect.jpg", "img/correct1.jpg", "img/incorrect.jpg", "img/correct2.jpg", "img/correct1.jpg", "img/incorrect.jpg", "img/empty1.png", "img/empty2.png");
 
