@@ -1,0 +1,29 @@
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+
+.htosty {
+  height: 160px;
+  width: 480px;
+}
+
+.block {
+  display: block;
+}
+
+#row4 {
+  margin-top: 20px;
+}
+
+.border {
+
+  height: 160px;
+  width: 160px;
+  padding: 0;
+}
