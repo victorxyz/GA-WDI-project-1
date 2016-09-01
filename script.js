@@ -11,9 +11,6 @@ var winMP3 = document.getElementById('winMP3');
 var yes1MP3 = document.getElementById('yes1MP3');
 var yes2MP3 = document.getElementById('yes2MP3');
 
-// $("p#leader").html($("#nameInput").text() + $("#score").val());
-
-
 
  box1interval = setInterval(function (){
    randomNum = Math.floor(Math.random() * pix.length);

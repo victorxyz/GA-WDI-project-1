@@ -20,3 +20,29 @@
   width: 95px;
   padding: 0;
 }
+
+#column1 {
+  height: 395px;
+  background-image: url("img/column1BG.jpg");
+  background-size: cover;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#column2 {
+  height: 395px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#column3 {
+  height: 395px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#recentScores {
+  list-style-type: none;
+}
