@@ -7,13 +7,8 @@
   text-align: center;
 }
 
-
-.htosty {
-  width: 270px;
-}
-
-.block {
-  display: block;
+.topPadding {
+  padding-top: 10px;
 }
 
 #row4 {
@@ -21,8 +16,7 @@
 }
 
 .border {
-
-  height: 90px;
-  width: 90px;
+  height: 95px;
+  width: 95px;
   padding: 0;
 }

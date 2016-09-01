@@ -5,6 +5,12 @@ var seconds = 30; //this defines the starting time for the timer
 var second = 0; //if seconds = second, game ends;
 var continue_game = true;
 var pix = new Array("img/correct1.jpg", "img/incorrect.jpg", "img/correct2.jpg", "img/incorrect.jpg", "img/correct3.jpg", "img/incorrect.jpg", "img/incorrect.jpg", "img/correct1.jpg", "img/incorrect.jpg", "img/correct2.jpg", "img/correct1.jpg", "img/incorrect.jpg", "img/empty1.png", "img/empty2.png");
+var marshmellowMP3 = document.getElementById('marshmellowMP3');
+var no1MP3 = document.getElementById('no1MP3');
+var winMP3 = document.getElementById('winMP3');
+var yes1MP3 = document.getElementById('yes1MP3');
+var yes2MP3 = document.getElementById('yes2MP3');
+
 // $("p#leader").html($("#nameInput").text() + $("#score").val());
 
 
@@ -68,7 +74,8 @@ function startTimer() {
     clearInterval(box7interval);
     clearInterval(box8interval);
     clearInterval(box9interval);
-    if (continue_game) { $("#recentScores").append("<li>" + $('#score').text() + "</li>"); }
+    if (continue_game) { $("#recentScores").append("<li>" + $('#score').text() + "</li>");
+    winMP3.play(); }
     continue_game = false;
     return;
   }
@@ -88,18 +95,22 @@ function startTimer() {
         var path = $(this).attr("src");
         if( correctImg1 == path) {
           scoreVal++;
+          yes1MP3.play();
           $("#score").text(scoreVal);
           console.log(scoreVal);
         } else if ( correctImg2 == path) {
           scoreVal += 2;
+          yes1MP3.play();
           $("#score").text(scoreVal);
           console.log(scoreVal);
         } else if ( correctImg3 == path) {
           scoreVal += 3;
+          yes2MP3.play();
           $("#score").text(scoreVal);
           console.log(scoreVal);
         } else if ( incorrectImg == path) {
           scoreVal -= 5;
+          no1MP3.play();
           $("#score").text(scoreVal);
           console.log(scoreVal);
           }
@@ -249,8 +260,9 @@ function startTimer() {
         }
         if (scoreVal >106 && scoreVal >106) {
           document.getElementById("infImg").src = "img/inflat/inf46.png";
+          marshmellowMP3.play();
         }
-        }
+      }
     });
 })();
 

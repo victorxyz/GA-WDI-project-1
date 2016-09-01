@@ -17,19 +17,26 @@
   <body>
     <div class="container-fluid textcenter">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-xs-12">
-          <p>Click the Start/Reset button to start the game</p>
-          <p>The higher your score, the faster the inflatable man dances!<br>
-             Avoid the -5 boxes and<br>
-             Click the + boxes as quickly as you can!
+        <div class="col-lg-4 col-md-12 col-xs-12" id="column1">
+          <h3>Instructions</h3>
+          <p>
+            Increase your score by clicking on the boxes<br>
+            as quickly and as many times as you can.<br><br>
+            As your score increases,<br>
+            the Marshmallow man will inflate!<br><br>
+            Avoid clicking the -5 boxes which will<br>
+            deflat the Marshmallow man!<br><br>
+            Click the Start/Reset button to start the game
           </p>
-          <p>Recent Scores</p>
+
+          </p>
+          <h3>Recent Scores</h3>
           <ul id="recentScores">
 
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-xs-12 topPadding" id="column2">
           <div class="row" id="row1">
             <div class="boxWidth inlineBlock border" id="1" >
               <img src="" id="box1Img">
@@ -78,8 +85,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-xs-12 topPadding id="column3"">
             <img src="img/inflat/inf1.png" id="infImg">
+            <h2>Inflate The Marshmallow Man Game</h2>
         </div>
       </div>
 
@@ -87,19 +95,23 @@
 
 
 
-
-
-
+    <audio id="marshmellowMP3">
+    <source src="sounds/man.mp3" type="audio/mp3">
+    </audio>
+    <audio id="no1MP3">
+    <source src="sounds/no.mp3" type="audio/mp3">
+    </audio>
+    <audio id="winMP3">
+    <source src="sounds/win.mp3" type="audio/mp3">
+    </audio>
+    <audio id="yes1MP3">
+    <source src="sounds/yes1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="yes2MP3">
+       <source src="sounds/yes2.mp3" type="audio/mp3">
+    </audio>
     <script src="script.js"></script>
   </body>
-
-
-
-
-
-
-
-
 
 
 
