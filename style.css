@@ -9,8 +9,7 @@
 
 
 .htosty {
-  height: 160px;
-  width: 480px;
+  width: 270px;
 }
 
 .block {
@@ -23,7 +22,7 @@
 
 .border {
 
-  height: 160px;
-  width: 160px;
+  height: 90px;
+  width: 90px;
   padding: 0;
 }

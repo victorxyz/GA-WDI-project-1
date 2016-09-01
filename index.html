@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Mouse Warrior</title>
+    <title>Inflatable Man Dance</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -15,64 +15,74 @@
 
 
   <body>
-    <div class="container-fluid textcenter htosty">
-      <div class="row inlineBlock" id="row1">
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="1" >
-          <img src="" id="box1Img">
+    <div class="container-fluid textcenter">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-xs-12">
+          <p>Click the Start/Reset button to start the game</p>
+          <p>The higher your score, the faster the inflatable man dances!<br>
+             Avoid the -5 boxes and<br>
+             Click the + boxes as quickly as you can!
+          </p>
+          <p>Recent Scores</p>
+          <ul id="recentScores">
+
+          </ul>
         </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="2">
-          <img src="" id="box2Img">
+
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="row" id="row1">
+            <div class="boxWidth inlineBlock border" id="1" >
+              <img src="" id="box1Img">
+            </div>
+            <div class="boxWidth inlineBlock border" id="2">
+              <img src="" id="box2Img">
+            </div>
+            <div class="boxWidth inlineBlock border" id="3">
+              <img src="" id="box3Img">
+            </div>
+          </div>
+          <div class="row" id="row2">
+            <div class="boxWidth inlineBlock border" id="4" >
+              <img src="" id="box4Img">
+            </div>
+            <div class="boxWidth inlineBlock border" id="5">
+              <img src="" id="box5Img">
+            </div>
+            <div class="boxWidth inlineBlock border" id="6">
+              <img src="" id="box6Img">
+            </div>
+          </div>
+          <div class="row" id="row3">
+            <div class="boxWidth inlineBlock border" id="7" >
+              <img src="" id="box7Img">
+            </div>
+            <div class="boxWidth inlineBlock border" id="8">
+              <img src="" id="box8Img">
+            </div>
+            <div class="boxWidth inlineBlock border" id="9">
+              <img src="" id="box9Img">
+            </div>
+          </div>
+          <div class="row inlineBlock textcenter" id="row4">
+            <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock" id="timerDiv" >
+              <label for="timer">Time left</label>
+              <p id="timerID"></p>
+            </div>
+            <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock" id="scoreDiv">
+              <label for="score">Your Score</label>
+              <p id="score">0</p>
+            </div>
+            <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock" id="resetDiv">
+              <button type="button" id="resetButton">Start/Reset</button>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="3">
-          <img src="" id="box3Img">
+
+        <div class="col-lg-4 col-md-6 col-xs-12">
+            <img src="img/inflat/inf1.png" id="infImg">
         </div>
       </div>
-    </div><!-- /.container-fluid -->
 
-    <div class="container-fluid textcenter htosty">
-      <div class="row inlineBlock" id="row2">
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="4" >
-          <img src="" id="box4Img">
-        </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="5">
-          <img src="" id="box5Img">
-        </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="6">
-          <img src="" id="box6Img">
-        </div>
-      </div>
-    </div><!-- /.container-fluid -->
-
-    <div class="container-fluid textcenter htosty">
-      <div class="row inlineBlock" id="row3">
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="7" >
-          <img src="" id="box7Img">
-        </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="8">
-          <img src="" id="box8Img">
-        </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock border" id="9">
-          <img src="" id="box9Img">
-        </div>
-      </div>
-    </div><!-- /.container-fluid -->
-
-
-
-    <div class="container-fluid textcenter htosty">
-      <div class="row inlineBlock" id="row4">
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock" id="timerDiv" >
-          <label for="timer">Time left</label>
-          <p id="timerID"></p>
-        </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock" id="scoreDiv">
-          <label for="score">Your Score</label>
-          <p id="score">0</p>
-        </div>
-        <div class="col-xs-4 col-md-4 col-lg-4 boxWidth inlineBlock" id="reloadDiv">
-          <button type="button" id="resetButton">Reset</button>
-        </div>
-      </div>
     </div><!-- /.container-fluid -->
 
 
