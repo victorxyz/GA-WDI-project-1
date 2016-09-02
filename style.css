@@ -46,3 +46,11 @@
 #recentScores {
   list-style-type: none;
 }
+
+#resetDiv {
+  padding: 0
+}
+
+#row1 #row2 #row3 {
+  margin: 0;
+}
